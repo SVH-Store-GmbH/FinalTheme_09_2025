@@ -37,6 +37,14 @@
 .media-gallery__viewer {
   border: 1px solid var(--gallery-border-color);
   background-color: var(--gallery-bg-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.media-gallery .media,
+.media-gallery product-model,
+.media-gallery deferred-media {
+  aspect-ratio: var(--media-ratio);
 }
 
 .media-viewer,
@@ -101,6 +109,13 @@
 .media-thumbs__btn {
   border: 1px solid var(--gallery-border-color);
   background-color: var(--gallery-bg-color);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.media-thumbs__btn:hover {
+  transform: scale(1.05);
 }
 .media-thumbs__btn::after {
   content: "";
